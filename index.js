@@ -12,7 +12,6 @@ const answer = await inquirer.prompt([
             "Subtraction",
             "Multiplication",
             "Division",
-            //"Percentage",
         ],
     },
 ]);
@@ -29,8 +28,6 @@ else if (answer.Operator === "Multiplication") {
 else if (answer.Operator === "Division") {
     console.log(answer.FirstNumber / answer.SecondNumber);
 }
-//else if (answer.Operator === "Percentage") 
-//{console.log(answer.FirstNumber % answer.SecondNumber);} 
 else {
     console.log("please selected valid Operator");
 }
